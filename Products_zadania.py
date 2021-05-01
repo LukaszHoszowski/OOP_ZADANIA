@@ -28,12 +28,16 @@ class Products:
         return self.price * self.quantity
 
 
-# f = Products('Jabko', 'Owoc', 100.00, 10)
-# g = Products('Jabko', 'Owoc', 9.99, 2)
-# h = Products('Jabko', 'Owoc', 5.65, 1)
-# i = Products('Jabko', 'Owoc', 10.0, 5)
-#
-# print(f.get_total_sum())
-# print(g.get_total_sum())
-# print(h.get_total_sum())
-# print(i.get_total_sum())
+def main():
+    f = Products('Jabko', 'Owoc', 100.00, 10)
+    g = Products('Jabko', 'Owoc', 9.99, 2)
+    h = Products('Jabko', 'Owoc', 5.65, 1)
+    i = Products('Jabko', 'Owoc', 10.0, 5)
+
+    print(f.get_total_sum())
+    print(g.get_total_sum())
+    print(h.get_total_sum())
+    print(i.get_total_sum())
+
+if __name__ == '__main__':
+    main()
