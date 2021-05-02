@@ -1,6 +1,7 @@
 from random import randint
 from functools import lru_cache
 
+
 # Zadanie 1
 
 class Dice:
@@ -14,6 +15,7 @@ class Dice:
 
     def roll(self):
         return randint(1, self.dice_type)
+
 
 # f = Dice(100)
 # print(f.roll())
@@ -43,6 +45,7 @@ class Dice2:
         else:
             raise StopIteration('end of collection')
 
+
 # f = Dice2(10, 2)
 # i = iter(f)
 
@@ -57,7 +60,7 @@ class Dice2:
 
 def roll_the_dice(n=3):
     for x in range(3):
-        yield randint(1,6)
+        yield randint(1, 6)
 
 
 # a = roll_the_dice(3)
@@ -73,9 +76,11 @@ song = ['Wlazł kotek na płotek i mruga,',
         'ładna to piosenka, nie długa. Nie długa, nie krótka, lecz w sam raz,',
         'zaśpiewaj koteczku, jeszcze raz.']
 
+
 def sing(song):
     for x in song:
         yield x
+
 
 # a = sing(song)
 #
